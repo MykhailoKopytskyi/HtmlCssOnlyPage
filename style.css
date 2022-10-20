@@ -56,9 +56,54 @@ h2{}
 .items_big{}
 
 .item{
-  width: 200px;
+  width: 188px;
   height: 150px;
   outline: 1px solid red;
   background: #F6F6F6;
   padding: 15px;
+}
+
+.upper_content{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #808080;
+}
+
+.results{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: right;
+}
+
+.subtitle{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5C5C5C;
+}
+
+.quantitative_results{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #5C5C5C;
+}
+
+.bottom_content{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.icon{
+  font-size: 10px;
+}
+
+.bottom_comment{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #808080;
 }
