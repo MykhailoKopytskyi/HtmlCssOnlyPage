@@ -16,6 +16,7 @@ ul{
 img{
   border: 0;
   display: block;
+  /* transform: translateY(-15px); */
 }
 
 section{
@@ -59,4 +60,5 @@ h2{}
   height: 150px;
   outline: 1px solid red;
   background: #F6F6F6;
+  padding: 15px;
 }
