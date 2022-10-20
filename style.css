@@ -20,18 +20,33 @@ img{
 
 section{
   display: grid;
-  grid-template-columns: repeat(150px, 1fr);
+  grid-template-columns: 150px 1fr;
 }
 
-.menu{}
+.menu{height: 100vh;outline: 1px solid red;}
 
-.main_page{}
+.main_page{
+  background: rgba(234, 234, 234, 1);
+}
 
-.container{}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 h2{}
 
-.items{}
+.items_all{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.items{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
 .items_small{}
 
@@ -39,4 +54,9 @@ h2{}
 
 .items_big{}
 
-.item{}
+.item{
+  width: 200px;
+  height: 150px;
+  outline: 1px solid red;
+  background: #F6F6F6;
+}
