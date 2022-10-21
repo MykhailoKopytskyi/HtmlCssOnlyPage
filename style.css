@@ -230,9 +230,10 @@ section{
 }
 
 .upper_block{
-  padding:25px 15px;
+  padding:22px 15px;
   background: #D89E24;
   color: #fff;
+  transform: translateY(-15px);
 }
 
 .icons_names{
@@ -275,6 +276,28 @@ section{
 
 
 /* ALARM, CODE BELOW MUST BE CORRECTED!!!!!!!!!!!!!!!!!!!! */
+
+.item_big_title{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 12px 20px;
+  color: #fff;
+  transform: translateY(-15px);
+}
+
+.item_big_title h3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.item_big_title p{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 
 
 .item .list_denotations li{
