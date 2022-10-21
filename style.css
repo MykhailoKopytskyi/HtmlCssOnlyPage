@@ -16,7 +16,21 @@ ul{
 img{
   border: 0;
   display: block;
+  width: 100%;
 }
+
+.item{
+  flex-grow: 1;
+}
+
+.main_page{
+  background: rgba(234, 234, 234, 1);
+}
+
+
+
+
+
 
 section{
   display: grid;
@@ -26,10 +40,6 @@ section{
 .menu{
   height: 100%;
   outline: 1px solid red;
-}
-
-.main_page{
-  background: rgba(234, 234, 234, 1);
 }
 
 .container{
@@ -50,58 +60,52 @@ section{
  .items{
   display: flex;
   gap: 15px;
-
-  
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
 }
 
-.items_small{}
 
-.items_average{}
 
-.items_big{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
 
-.item{
-  flex-grow: 1;
-}
+
+
+
+
 
 .items_small .item{
-  /* width: 188px; */
-  /* height: 150px; */
-  /* outline: 1px solid red;s */
   background: #F6F6F6;
-  /* padding: 15px;00 */
-  /* padding: 7px 15px 10px 15px; */
   padding: 15px;
   padding-top: 0;
 }
 
+
+
 .upper_content{
   display: flex;
   justify-content: space-between;
-  /* padding-bottom: 10px; */
   border-bottom: 1px solid #808080;
-  /* padding-top: 15px; */
 }
 
-.items_small img{
-  transform: translateY(-17px);
+.icon_green{
+  width: 55px;
+  height: 55px;
+  background: #448B00;
+}
+
+.upper_icon{
+  transform: translateY(-14px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .results{
   display: flex;
   flex-direction: column;
   gap: 3px;
-  /* padding-top: 8px; */
   padding-top: 15px;
   padding-bottom: 10px;
 }
 
- .text_right{
+.text_right{
   text-align: right;
 }
 
@@ -137,17 +141,23 @@ section{
   color: #808080;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.items_average{}
+
 .items_average .item{
-  /* width: 257px; */
   background: #F6F6F6;
-  /* height: 100px; */
   padding: 15px 12px;
   padding-top: 0;
-}
-
-.image_average{
-  display: block;
-  width: 100%;
 }
 
 .items_average img{
@@ -166,32 +176,42 @@ section{
   color: #5C5C5C;
 }
 
-.items_average .subtitle{
-  
-}
+.items_average .subtitle{}
 
-.items_average .improvement{
-  
-}
+.items_average .improvement{}
 
 .items_average .bottom_content{}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.items_big{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .items_big .item{
-  /* flex-basis: 385px; */
   background: #F6F6F6;
-  /* flex-grow: 1; */
-  /* width: 385px; */
-  /* width: 450px; */
   padding-right: 13px;
   padding-left: 13px;
 }
-
-
-
-
-
-
-
 
 .upper_block{
   padding:25px 15px;
@@ -238,10 +258,8 @@ section{
 
 
 
-.items_big img{
-  display: block;
-  width: 100%;
-}
+/* ALARM, CODE BELOW MUST BE CORRECTED!!!!!!!!!!!!!!!!!!!! */
+
 
 .item .list_denotations li{
   display: flex;
@@ -251,7 +269,6 @@ section{
   padding-left: 10px;
   padding-right: 50px;
   border-bottom: 1px solid #808080;
-  /* gap: 150px; */
 }
 
 
