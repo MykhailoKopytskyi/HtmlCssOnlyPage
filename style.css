@@ -298,8 +298,6 @@ section{
   line-height: 14px;
 }
 
-
-
 .item .list_denotations li{
   display: flex;
   justify-content: space-between;
@@ -310,28 +308,23 @@ section{
   border-bottom: 1px solid #808080;
 }
 
+.denotations{
+  color: #82BEC0;
+}
 
-.list_denotations span{
+.list_denotations div{
   display: inline-flex;
-  width: 130px;
+  width: 160px;
   justify-content:space-between;
 }
 
-i{
-
-}
-
-.delete{
+.correct_flex_distribution{
   display: inline-block;
   width: 79.53px;
 }
 
 .width_for_table{
   width: 52.45px;
-}
-
-.denotations{
-  color: #82BEC0;
 }
 
 .delete_border{
