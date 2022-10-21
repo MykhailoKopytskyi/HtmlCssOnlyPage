@@ -169,10 +169,15 @@ section{
   background: #F6F6F6;
   padding: 15px 12px;
   padding-top: 0;
+  /* flex-basis: 256px; */
+}
+
+.items_average .icon_average{
+  transform: translateY(-12px);
+  padding: 15px;
 }
 
 .items_average img{
-  transform: translateY(-12px);
   width: 100%;
 }
 
