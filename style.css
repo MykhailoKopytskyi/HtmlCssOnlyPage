@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -17,6 +21,13 @@ ul{
 img{
   border: 0;
   display: block;
+}
+
+input{
+  display: block;
+  /* width: 100%; */
+  outline: none;
+  border: none;
 }
 
 .item{
@@ -70,7 +81,7 @@ img{
   flex-direction: column;
   padding-right: 15px;
   padding-left: 15px;
-  gap:10px;
+  /* gap:10px; */
   margin-top: 25px;
 
 }
@@ -78,17 +89,21 @@ img{
 .block_menu a{
   display: flex;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   padding-left: 10px;
   padding-right: 10px;
   gap: 15px;
-}
-
-.block_menu li:nth-child(1){
-  background: #C32056;
   font-size: 12px;
   line-height: 14px;
+}
+
+.block_menu li:hover{
+  background: rgb(201, 200, 200, .3);
+}
+
+.active{
+  background: #C32056;
   color: #FFFFFF;
 }
 
@@ -418,7 +433,7 @@ img{
   border: none;
 }
 
-footer{
+.footer{
   display: flex;
   justify-content: space-between;
   margin-left: 15px;
@@ -505,3 +520,84 @@ footer{
 }
 
 
+
+
+
+
+
+/* USER PROFILE */
+.user_title{
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.form_and_description{
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  color: #808080;
+  column-gap: 15px;
+}
+
+.color{
+  background: #C32056;
+}
+
+.form_and_title{
+  padding: 0 15px 20px 15px;
+  background: #fff;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row{
+  display: flex;
+  gap: 20px;
+}
+
+
+.input_and_up{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.row:nth-child(5) .input_and_up{
+  gap: 35px;
+}
+
+.up_comment{
+  font-size: 12px;
+}
+
+.row .input{
+  border-bottom: 1px solid #808080;
+  width: 100%;
+}
+
+.row:nth-child(6){
+  justify-content: flex-end;
+}
+
+.row:nth-child(6) .input{
+  border: 0;
+}
+
+.submit{
+  padding: 12px 30px;
+  width: 40%;
+  background: #C32056;
+  color: #fff;
+}
+
+.description{
+  background: #fff;
+}
+
+.footer_user{
+  padding-bottom: 90px;
+}
