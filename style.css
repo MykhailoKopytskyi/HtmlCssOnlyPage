@@ -74,7 +74,7 @@ section{
   gap: 15px;
 }
 
-.block_menu a:nth-child(1){
+.block_menu li:nth-child(1){
   background: #C32056;
   font-size: 12px;
   line-height: 14px;
