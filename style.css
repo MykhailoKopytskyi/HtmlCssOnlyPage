@@ -7,6 +7,7 @@
 a{
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
 ul{
@@ -31,16 +32,22 @@ img{
 
 
 
-section{
+.section{
   display: grid;
   grid-template-columns: 175px 1fr;
+
 }
 
 .menu{
   height: 100%;
-  outline: 1px solid red;
-  background: #F6F6F6;
-  
+  background: #F6F6F6;  
+  position: relative;
+}
+
+.fixed_left{
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .menu h2{
@@ -49,11 +56,14 @@ section{
   line-height: 19px;
   color: #5C5C5C;
   padding-left: 25px;
-  padding-right: 20pz;
+  padding-right: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #808080;
+  width: 175px;
+
 }
+
 
 .block_menu{
   display: flex;
@@ -62,6 +72,7 @@ section{
   padding-left: 15px;
   gap:10px;
   margin-top: 25px;
+
 }
 
 .block_menu a{
@@ -429,47 +440,7 @@ footer{
   color: #808080;
 }
 
-/* @media(min-width:1000px){
-  .items_small{
-    grid-template-columns: repeat(4, 1fr);
-  }
-} */
 
-/* @media(max-width: 999px){
-  .items_small{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .items_big{
-    grid-template-columns: 1fr;
-  }
-}
-
-@media(max-width: 799px){
-  section{
-    grid-template-columns: 1fr;
-  }
-
-  .menu{
-    display: none;
-  }
-
-  .icon_menu_title img{
-    display: initial;
-  }
-}
-
-@media(max-width: 649px ){
-  .items_average{
-    grid-template-columns: 1fr;
-  }
-
-}
-
-@media(max-width: 499px){
-  .items_small{
-    grid-template-columns: 1fr;
-  }
-} */
 
 
 
@@ -483,7 +454,7 @@ footer{
     grid-template-columns: 1fr;
   }
 
-  section{
+  .section{
     grid-template-columns: 1fr;
   }
   .menu{
@@ -509,7 +480,7 @@ footer{
 }
 
 @media(min-width:800px ){
-  section{
+  .section{
     display: grid;
     grid-template-columns: 175px 1fr;
   }
@@ -523,7 +494,7 @@ footer{
   }
 }
 
-@media(min-width: 1000px){
+@media(min-width: 1056px){
   .items_big{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -534,35 +505,3 @@ footer{
 }
 
 
-
-
-
-/* @media(min-width: 1000px){
-  .items{
-    display: grid;
-  }
-
-  .items_small{
-    grid-template-columns: repeat(4,1fr);
-  }
-
-  .items_average{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .items_big{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  section{
-    grid-template-columns: 175px 1fr;
-  }
-
-  .menu{
-    display: initial;
-  }
-
-  .icon_menu_title img{
-    display: none;
-  }
-} */
