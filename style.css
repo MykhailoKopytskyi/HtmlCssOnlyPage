@@ -527,13 +527,12 @@ input{
 
 /* USER PROFILE */
 .user_title{
-  padding-top: 30px;
   padding-bottom: 40px;
 }
 
 .form_and_description{
   display: grid;
-  grid-template-columns: 5fr 3fr;
+  grid-template-columns: 7fr 3fr;
   color: #808080;
   column-gap: 15px;
 }
@@ -589,15 +588,65 @@ form{
 
 .submit{
   padding: 12px 30px;
-  width: 40%;
+  width: 45%;
   background: #C32056;
   color: #fff;
 }
 
+
+
+
+
+
 .description{
   background: #fff;
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: fit-content;
 }
+
+.icon_name{
+  width: 150px;
+  height: 150px;
+  transform: translateY(-50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px
+}
+
+.description img{
+  width: 100%;
+}
+
+.description p{
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+
+
+
+
 
 .footer_user{
   padding-bottom: 90px;
+}
+
+
+@media(min-width:0){
+  .form_and_description{
+    grid-template-columns: 1fr ;
+  }
+}
+
+@media(min-width: 800px){
+  .form_and_description{
+    grid-template-columns: 7fr 3fr;
+  }
 }
