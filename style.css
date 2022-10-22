@@ -16,7 +16,6 @@ ul{
 img{
   border: 0;
   display: block;
-  /* width: 100%; */
 }
 
 .item{
@@ -230,7 +229,7 @@ section{
 }
 
 .upper_block{
-  padding:22px 15px;
+  padding:26px 15px;
   background: #D89E24;
   color: #fff;
   transform: translateY(-15px);
@@ -253,8 +252,12 @@ section{
   align-items: center;
   flex-basis: 580px;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tick_your_answer li:nth-child(4){
+  border: none;
 }
 
 .tick_your_answer li img{
@@ -274,8 +277,6 @@ section{
 
 
 
-
-/* ALARM, CODE BELOW MUST BE CORRECTED!!!!!!!!!!!!!!!!!!!! */
 
 .item_big_title{
   display: flex;
@@ -301,14 +302,14 @@ section{
 .item .list_denotations li{
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-left: 10px;
   padding-right: 50px;
   border-bottom: 1px solid #808080;
 }
 
-.denotations{
+.list_denotations li:nth-child(1){
   color: #82BEC0;
 }
 
@@ -327,6 +328,30 @@ section{
   width: 52.45px;
 }
 
-.delete_border{
+.list_denotations li:nth-child(5){
   border: none;
 }
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-top: 60px;
+  padding: 15px;
+  border: 1px solid #808080;
+  border-width: 1px 0 0 0;
+
+}
+
+.footer_left{
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer_right{
+  color: #808080;
+
+}
+
