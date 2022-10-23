@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  font-size: 16px;
+}
 
 body{
   font-family: 'Roboto', sans-serif;
@@ -31,7 +34,9 @@ input{
 }
 
 .item{
-  flex-grow: 1;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0 0 1px
 }
 
 .main_page{
@@ -53,12 +58,16 @@ input{
   height: 100%;
   background: #F6F6F6;  
   position: relative;
+  border: 3px solid #D8D8D8;
+  border-width: 0 3px 0 0;
+  width: 175px;
 }
 
 .fixed_left{
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
 }
 
 .menu h2{
@@ -71,8 +80,6 @@ input{
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #808080;
-  width: 175px;
-
 }
 
 
@@ -325,12 +332,12 @@ input{
 
 .items_big .item{
   background: #F6F6F6;
-  padding-right: 13px;
-  padding-left: 13px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .upper_block{
-  padding:26px 15px;
+  padding: 10px 10px;
   background: #D89E24;
   color: #fff;
   transform: translateY(-15px);
@@ -338,23 +345,30 @@ input{
 
 .icons_names{
   display: flex;
-  gap: 30px;
+  gap: 10px;
 }
 
 .icons_names div{
   display: flex;
   gap:5px;
+  padding: 10px 15px;
+}
+
+.icons_names div:hover:nth-child(n+2){
+  background: rgba(255, 255, 255, .2);
 }
 
 .items_big .tick_your_answer li{
   display: flex;
-  gap: 10px;
+  gap: 5px;
   border-bottom: 1px solid #808080;
   align-items: center;
   flex-basis: 580px;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .tick_your_answer li:nth-child(4){
@@ -502,6 +516,16 @@ input{
 
   .menu{
     display: initial;
+    width: 175px;
+    position: relative;
+  }
+
+  .fixed_left{
+    
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
   }
 
   .icon_menu_title img{
@@ -622,6 +646,10 @@ form{
 .description img{
   width: 100%;
 }
+.description h3{
+  color: #000;
+  font-weight: 600;
+}
 
 .description p{
   text-align: center;
@@ -636,6 +664,8 @@ form{
 
 .footer_user{
   padding-bottom: 90px;
+  padding-top: 30px;
+  margin-top: 60px;
 }
 
 
@@ -653,6 +683,10 @@ form{
     order:1;
   }
 
+  .footer_user{
+    padding-bottom: 30px;
+  }
+
   
 }
 
@@ -667,5 +701,9 @@ form{
 
   .decription{
     order:2;
+  }
+
+  .footer_user{
+    padding-bottom: 90px;
   }
 }
