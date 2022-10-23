@@ -28,8 +28,8 @@ img{
 
 input{
   display: block;
-  outline: none;
   border: none;
+  outline: none;
 }
 
 .item{
@@ -188,7 +188,7 @@ input{
 
 
 .items_small{
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -292,7 +292,7 @@ input{
 
 
 .items_average{
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -350,7 +350,7 @@ input{
 
 
 .items_big{
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(2, 1fr);
 }
 
