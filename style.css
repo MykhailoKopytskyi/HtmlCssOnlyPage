@@ -36,6 +36,7 @@ input{
   box-shadow: .1875rem .1875rem .0625rem rgba(0, 0, 0, 0.15);
   border: .0625rem solid rgba(0, 0, 0, 0.15);
   border-width: .0625rem 0 0 .0625rem;
+  background: #fff;
 }
 
 .main_page{
@@ -49,9 +50,9 @@ input{
 
 .menu{
   height: 100%;
-  background: #F6F6F6;  
   border: .1875rem solid #D8D8D8;
   border-width: 0 .1875rem 0 0;
+  background: #F6F6F6;  
 }
 
 .fixed_left{
@@ -60,15 +61,12 @@ input{
 }
 
 .menu h2{
+  padding: 1.875rem 1.25rem 1.875rem 1.5625rem;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.1875rem;
-  color: #5C5C5C;
-  padding-left: 1.5625rem;
-  padding-right: 1.25rem;
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
   border-bottom: .0625rem solid #808080;
+  color: #5C5C5C;
 }
 
 .block_menu{
@@ -140,7 +138,6 @@ input{
 }
 
 .items_small .item{
-  background: #F6F6F6;
   padding: .9375rem;
   padding-top: 0;
 }
@@ -172,12 +169,12 @@ input{
 }
 
 .upper_icon{
-  width: 3.4375rem;
-  height: 3.4375rem;
-  transform: translateY(-.875rem);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 3.4375rem;
+  height: 3.4375rem;
+  transform: translateY(-.875rem);
   padding: .7rem;
 }
 
@@ -230,7 +227,6 @@ input{
 }
 
 .items_average .item{
-  background: #F6F6F6;
   padding: .9375rem .75rem;
   padding-top: 0;
 }
@@ -247,8 +243,8 @@ input{
 .items_average .results{
   gap: .625rem;
   padding: 0;
-  border-bottom: .0625rem solid #808080;
   padding-bottom: .625rem;
+  border-bottom: .0625rem solid #808080;
   font-weight: 400;
   font-size: .875rem;
   line-height: 1rem;
@@ -260,15 +256,14 @@ input{
 }
 
 .items_big .item{
-  background: #F6F6F6;
   padding: 0 1rem;
 }
 
 .upper_block{
   padding: .625rem;
+  transform: translateY(-.9375rem);
   background: #D89E24;
   color: #fff;
-  transform: translateY(-.9375rem);
 }
 
 .icons_names{
@@ -289,12 +284,11 @@ input{
 
 .items_big .tick_your_answer li{
   display: flex;
-  gap: .625rem;
-  border-bottom: .0625rem solid #808080;
   align-items: center;
   justify-content: space-between;
+  gap: .625rem;
   padding: 1.25rem .625rem;
-  
+  border-bottom: .0625rem solid #808080;
 }
 
 .tick_your_answer li:nth-child(4){
@@ -316,8 +310,8 @@ input{
   flex-direction: column;
   gap: .875rem;
   padding: .75rem 1.25rem;
-  color: #fff;
   transform: translateY(-.9375rem);
+  color: #fff;
 }
 
 .item_big_title h3{
@@ -327,7 +321,6 @@ input{
 }
 
 .item_big_title p{
-  font-weight: 400;
   font-size: .75rem;
   line-height: .875rem;
 }
@@ -391,8 +384,8 @@ input{
 .form_and_description{
   display: grid;
   grid-template-columns: 7fr 3fr;
-  color: #808080;
   column-gap: .9375rem;
+  color: #808080;
 }
 
 .color{
@@ -450,7 +443,6 @@ input{
 }
 
 .description{
-  background: #fff;
   padding: 1.25rem;
   padding-top: 0;
   display: flex;
@@ -458,24 +450,26 @@ input{
   align-items: center;
   gap: 1.875rem;
   height: fit-content;
+  background: #fff;
 }
 
 .icon_name{
-  width: 9.375rem;
-  height: 9.375rem;
-  transform: translateY(-3.125rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+  width: 9.375rem;
+  height: 9.375rem;
+  transform: translateY(-3.125rem);
 }
 
 .description img{
   width: 100%;
 }
+
 .description h3{
-  color: #000;
   font-weight: 600;
+  color: #000;
 }
 
 .description p{
@@ -505,7 +499,6 @@ input{
   .icon_menu_title img{
     display: initial;
   }
-  
 }
 
 @media(min-width: 31.25rem){
@@ -565,8 +558,6 @@ input{
   .footer_user{
     padding-bottom: 1.875rem;
   }
-
-  
 }
 
 @media(min-width: 50rem){
