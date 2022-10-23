@@ -642,11 +642,30 @@ form{
 @media(min-width:0){
   .form_and_description{
     grid-template-columns: 1fr ;
+    row-gap: 60px;
   }
+
+  .form_and_title{
+    order: 2;
+  }
+
+  .description{
+    order:1;
+  }
+
+  
 }
 
 @media(min-width: 800px){
   .form_and_description{
     grid-template-columns: 7fr 3fr;
+  }
+
+  .form_and_title{
+    order: 1;
+  }
+
+  .decription{
+    order:2;
   }
 }
