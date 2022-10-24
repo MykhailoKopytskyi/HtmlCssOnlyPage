@@ -501,19 +501,19 @@ input{
   }
 }
 
-@media(min-width: 31.25rem){
+@media(min-width: 532px){
   .items_small{
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media(min-width: 40.625rem){
+@media(min-width: 650px){
   .items_average{
     grid-template-columns: repeat(3,1fr);
   }
 }
 
-@media(min-width: 50rem ){
+@media(min-width: 800px){
   .section{
     display: grid;
     grid-template-columns: 10.9375rem 1fr;
@@ -521,7 +521,6 @@ input{
 
   .menu{
     display: initial;
-    width: 10.9375rem;
   }
 
   .icon_menu_title img{
@@ -529,7 +528,7 @@ input{
   }
 }
 
-@media(min-width: 72rem){
+@media(min-width: 1152px){
   .items_big{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -560,7 +559,22 @@ input{
   }
 }
 
-@media(min-width: 50rem){
+@media(min-width: 800px){
+  .form_and_title{
+    order: 2;
+  }
+
+  .decription{
+    order:1;
+  }
+
+  .footer_user{
+    padding-bottom: 5.625rem;
+  }
+}
+
+
+@media(min-width: 1152px){
   .form_and_description{
     grid-template-columns: 7fr 3fr;
   }
@@ -571,9 +585,5 @@ input{
 
   .decription{
     order:2;
-  }
-
-  .footer_user{
-    padding-bottom: 5.625rem;
   }
 }
