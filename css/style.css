@@ -408,16 +408,16 @@ input{
 .input_and_up{
   display: flex;
   flex-direction: column;
-  gap: .9375rem;
   width: 100%;
 }
 
-.row:nth-child(5) .input_and_up{
-  gap: 2.1875rem;
+.row:nth-child(5) label{
+  padding-bottom: 2.1875rem;
 }
 
-.up_comment{
+label{
   font-size: .75rem;
+  padding-bottom: .9375rem;
 }
 
 .row .input{
