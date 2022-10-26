@@ -285,7 +285,7 @@ input{
   font-size: .875rem;
 }
 
-.icons_names div:hover:nth-child(n+2){
+.icons_names a:hover:nth-child(n+2){
   background: rgba(255, 255, 255, .2);
 }
 
