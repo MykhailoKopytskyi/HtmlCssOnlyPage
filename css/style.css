@@ -47,10 +47,11 @@ input{
 
 .section{
   display: grid;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 1fr;
 }
 
 .menu{
+  display: none;
   height: 100%;
   border: .1875rem solid #D8D8D8;
   border-width: 0 .1875rem 0 0;
@@ -60,6 +61,7 @@ input{
 .fixed_left{
   position: sticky;
   top: 0;
+  height: 100%;
 }
 
 .menu h2{
@@ -114,7 +116,6 @@ input{
 
 .icon_menu_title img{
   height: 0.8125rem;
-  display: none;
 }
 
 .title{
@@ -132,11 +133,8 @@ input{
 
  .items{
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1.875rem;
-}
-
-.items_small{
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .upper_content{
@@ -219,10 +217,6 @@ input{
   color: #808080;
 }
 
-.items_average{
-  grid-template-columns: repeat(3, 1fr);
-}
-
 .items_average .icon_average{
   transform: translateY(-.75rem);
   padding: .9375rem;
@@ -241,10 +235,6 @@ input{
   font-size: .875rem;
   line-height: 1rem;
   color: #5C5C5C;
-}
-
-.items_big{
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .upper_block{
@@ -470,21 +460,6 @@ label{
   padding-bottom: 5.625rem;
   padding-top: 1.875rem;
   margin-top: 3.75rem;
-}
-
-.items{
-  grid-template-columns: 1fr;
-}
-
-.section{
-  grid-template-columns: 1fr;
-}
-.menu{
-  display: none;
-}
-
-.icon_menu_title img{
-  display: initial;
 }
 
 @media(min-width: 532px){
