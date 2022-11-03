@@ -36,7 +36,7 @@ input{
   box-shadow: .1875rem .1875rem .0625rem rgba(0, 0, 0, 0.15);
   border: .0625rem solid rgba(0, 0, 0, 0.15);
   border-width: .0625rem 0 0 .0625rem;
-  background: #fff;
+  background: #F6F6F6;
   padding: .9375rem;
   padding-top: 0;
 }
@@ -48,6 +48,7 @@ input{
 .section{
   display: grid;
   grid-template-columns: 1fr;
+  min-width: 500px;
 }
 
 .menu{
@@ -349,9 +350,10 @@ input{
 
 .item .list_denotations li{
   display: grid;
-  grid-template-columns: 1fr 4fr 2fr 2fr;
+  grid-template-columns: .5fr 2fr 3fr 1fr;
   padding: 0 .9375rem 0 .9375rem;
   border-bottom: .0625rem solid #808080;
+  column-gap: 4rem
 }
 
 .list_denotations span{
@@ -365,6 +367,10 @@ input{
 
 .list_denotations li:nth-child(5){
   border: none;
+}
+
+.list_denotations li span:nth-child(3){
+  justify-content: flex-end;
 }
 
 .footer{
@@ -422,10 +428,6 @@ input{
   width: 100%;
 }
 
-.row:nth-child(5) label{
-  padding-bottom: 2.1875rem;
-}
-
 .form_and_title label{
   font-size: .75rem;
   padding-bottom: .9375rem
@@ -436,12 +438,9 @@ input{
   width: 100%;
 }
 
-.row:nth-child(6){
-  justify-content: flex-end;
-}
-
 .row:nth-child(6) .input{
   border: 0;
+  justify-content: flex-end;
 }
 
 .submit{
