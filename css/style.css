@@ -48,7 +48,7 @@ input{
 .section{
   display: grid;
   grid-template-columns: 1fr;
-  min-width: 500px;
+  min-width: 410px;
 }
 
 .menu{
@@ -350,10 +350,10 @@ input{
 
 .item .list_denotations li{
   display: grid;
-  grid-template-columns: .5fr 2fr 3fr 1fr;
+  grid-template-columns: 50px 1fr 100px 100px;
   padding: 0 .9375rem 0 .9375rem;
   border-bottom: .0625rem solid #808080;
-  column-gap: 4rem
+  column-gap: 1.3rem
 }
 
 .list_denotations span{
@@ -371,6 +371,10 @@ input{
 
 .list_denotations li span:nth-child(3){
   justify-content: flex-end;
+}
+
+.list_denotations li span:nth-child(4){
+  padding-left: 1.5rem;
 }
 
 .footer{
