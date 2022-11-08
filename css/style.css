@@ -88,6 +88,10 @@ input{
   line-height: .875rem;
 }
 
+.block_menu p{
+  padding-top: .18rem;
+}
+
 .block_menu li:hover{
   background: rgb(201, 200, 200, .3);
 }
@@ -187,7 +191,7 @@ input{
 
 .items_small .subtitle{
   font-weight: 400;
-  font-size: .75rem;
+  font-size: .85rem;
   line-height: .875rem;
   color: #5C5C5C;
 }
@@ -202,12 +206,12 @@ input{
 .bottom_content{
   display: flex;
   gap: .3125rem;
-  align-items: center;
-  padding-top: .625rem;
+  padding-top: .9375rem;
 }
 
 .icon{
   font-size: .625rem;
+  padding-top: 0.03125rem;
 }
 
 .bottom_comment{
@@ -237,6 +241,10 @@ input{
   color: #5C5C5C;
 }
 
+.items_average .subtitle{
+  font-size: 1.1rem;
+}
+
 .upper_block{
   padding: .5rem;
   transform: translateY(-.9375rem);
@@ -246,6 +254,7 @@ input{
 
 .icons_names{
   display: flex;
+  align-items: center;
   gap: .525rem;
 }
 
@@ -278,7 +287,7 @@ input{
 .tick_your_answer label{
   display: flex;
   align-items: center;
-  gap: .3125rem;
+  gap: 1rem;
   width: 100%;
   padding: 1.5rem .625rem;
   font-size: .975rem;
@@ -380,9 +389,8 @@ input{
 .footer{
   display: flex;
   justify-content: space-between;
-  margin-left: .9375rem;
   margin-top: 3.75rem;
-  padding: .9375rem;
+  padding: 2rem;
   border: .0625rem solid #808080;
   border-width: .0625rem 0 0 0;
 }
@@ -419,6 +427,7 @@ input{
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  padding-top: .25rem;
 }
 
 .row{
@@ -442,7 +451,7 @@ input{
   width: 100%;
 }
 
-.row:nth-child(6) .input{
+.row:nth-child(6){
   border: 0;
   justify-content: flex-end;
 }
@@ -527,6 +536,10 @@ input{
 
   .decription{
     order:1;
+  }
+
+  .footer{
+    margin-left: .9375rem;
   }
 }
 
